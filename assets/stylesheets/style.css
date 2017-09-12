@@ -1,0 +1,402 @@
+html {
+  box-sizing: border-box;
+  color: #444;
+  font: 300 16px "Open Sans", arial, sans-serif;
+  text-align: justify;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+section>div {
+  max-width: 960px;
+  margin: 0 auto;
+}
+section>div p {
+text-align: left;
+margin-bottom: 1em;
+}
+
+/*
+****************
+Header
+****************
+ */
+
+
+nav {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   border-top: 10px solid #F5F5F5;
+   border-bottom: 1px solid #F5F5F5;
+   background: white;
+   z-index: 3;
+ }
+
+ nav ul {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 auto;
+   max-width: 920px;
+   justify-content: center;
+ }
+
+ nav li {
+   font-size: 12px;
+   margin: 13px 26px;
+ }
+
+ .banner {
+  background: url("../images/front.jpg") center  no-repeat;
+  margin-top: 55px;
+  height: 428px;
+  height: 428px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+ }
+
+ .banner img {
+   width: 78px;
+}
+  h1 {
+    font-size: 72px;
+    margin-top:5px;
+  }
+
+  h2 {
+    font-size: 31px;
+    margin-bottom: 55px;
+  }
+  h1, h2 {
+    color: white;
+    font-weight: normal;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4);
+  }
+
+  /*
+****************
+Main
+****************
+ */
+
+ main section {
+   border-bottom: 1px solid #efefef;
+   margin: 0 30px;
+   padding-top: 50px;
+   text-align: center;
+  }
+
+  h3 {
+    font-size: 48px;
+    font-weight: 100;
+    margin-bottom: 40px;
+  }
+
+
+  .button {
+    background: #008000;
+    color:white;
+    display: block;
+    font-weight: bold;
+    margin: 10px auto 70px;
+    margin-top: 10px;
+    padding: 10px 30px;
+    width: fit-content;
+  }
+
+  .button:hover {
+    background: #006000;
+  }
+  .button a {
+    color: white;
+    font-weight: bold;
+  }
+
+  /*
+  ****************
+  Speakers
+  ****************
+  */
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 882px;
+    margin: 0 auto;
+  }
+
+  article {
+    border: 1px solid #efefef;
+    height: 380px;
+    margin: 0 7px 10px;
+    position: relative;
+    width: 280px;
+  }
+
+  h4 a {
+    font-weight: bold;
+    color: #008000;
+    font-size: 24px;
+  }
+
+  .bio {
+    background: rgba(0,0,0,.9);
+    color: white;
+    font-size: 13px;
+    height: 0;
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.5s;
+    z-index: 2;
+
+    height: 380px;
+    width: 280px;
+  }
+
+  .bio a {
+    color: #008000;
+    font-weight: bold;
+  }
+
+  .bio a:hover, td a:hover {
+    text-decoration: underline;
+  }
+
+  .bio p {
+    padding-bottom: 15px;
+  }
+
+  article:hover .bio, article:target .bio {
+    opacity: 1;
+  }
+
+  /*
+  ****************
+  Schedule
+  ****************
+  */
+
+  table {
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: normal;
+    max-width: 960px;
+    text-align: left;
+  }
+
+  td {
+    padding: 10px;
+    border-top: 1px solid #efefef;
+  }
+
+  table img {
+    width: 128px;
+  }
+
+  td a {
+    display: block;
+    color: #008000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 7px;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 1px 4px;
+    font-size: 7px;
+    background: #eeeeee;
+    border: 1px solid #aaa;
+  }
+
+  #papers .button {
+    margin: 10px 0;
+  }
+
+    /*
+  ****************
+  Speakers
+  ****************
+  */
+
+  h5 {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .platinum, .gold, .silver, .support {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 960px;
+    text-align: left;
+  }
+
+  #sponsors img {
+    display: block;
+    object-fit: contain;
+  }
+  .gold {
+    padding-right: 61px;
+  }
+  .gold img, .silver img, .support img {
+    margin-right: 40px;
+  }
+  .silver img {
+    width: 240px;
+  }
+
+  .support img {
+    width: 180px;
+  }
+
+    /*
+  ****************
+  Footer
+  ****************
+  */
+
+  section:last-of-type {
+    border-bottom: none;
+  }
+
+  footer {
+    background: url("../images/people.jpg") no-repeat center 23%;
+    color: white;
+    background-size: cover;
+    height: 340px;
+    margin-top: 95px;
+  }
+
+  footer h3 {
+    padding-top: 27px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 100;
+    margin-bottom: 27px;
+  }
+
+  footer>div {
+    padding: 0 8px 18px;
+    background: rgba(0,0,0,.6);
+    width: 100%;
+  }
+
+  footer h4, footer p {
+    max-width: 960px;
+    margin: 0 auto;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+  }
+
+  footer h4 {
+    padding-top: 15px;
+    font-size: 31px;
+    font-weight: 600;
+  }
+  footer a {
+    color: #008000;
+    font-weight: bold;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  a.button {
+    margin: 0 0;
+  }
+
+  footer p {
+    margin-bottom: 17px;
+  }
+  footer p:nth-of-type(2) {
+    margin-bottom: 10px;
+  }
+
+  footer p:last-of-type {
+    margin-bottom: 0;
+  }
+  /*
+****************
+Responsive
+****************
+*/
+
+  @media(max-width: 654px) {
+    nav {
+      display: none;
+    }
+
+    .banner {
+      margin-top: 0;
+      height: 300px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    #speakers {
+      margin: 0;
+    }
+
+    #sponsors {
+      margin: 0 10px;
+    }
+
+    tr {
+      position: relative;
+      display: block;
+      border-top: 1px solid #EFEFEF;
+    }
+
+    td {
+      display: block;
+      border: none;
+    }
+
+    td a {
+      padding: 0;
+    }
+
+    td.time {
+      text-align: right;
+      border: none;
+      padding-bottom: 30px;
+    }
+
+    table img {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 80px;
+    }
+
+    td.event {
+      margin-bottom: -20px;
+    }
+
+    footer h3 {
+      font-size: 35px;
+      padding-top: 22px;
+      margin-bottom: 22px;
+    }
+  }
